@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4910098-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-4910098-7');
+</script>
+<!-- End Google Analytics -->
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@tommy351">
+<meta property="fb:admins" content="100000247608790">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" target="_blank" rel="noopener" href="https://github.com/tommy351">GitHub</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Python安装" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/19/Python%E5%AE%89%E8%A3%85/" class="article-date">
+  <time class="dt-published" datetime="2021-03-19T01:17:56.000Z" itemprop="datePublished">2021-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/03/19/Python%E5%AE%89%E8%A3%85/">Python安装</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>首先开始准备工作！！！</p>
+<h2 id="安装Python-以Mac为例"><a href="#安装Python-以Mac为例" class="headerlink" title="安装Python(以Mac为例)"></a>安装Python(以Mac为例)</h2><h3 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h3><p>在终端执行命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /usr/bin/ruby -e <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行完成之后，homebrew和pip等工具就自动安装完成。</p>
+<h3 id="安装Python3"><a href="#安装Python3" class="headerlink" title="安装Python3"></a>安装Python3</h3><p>1.终端输入命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install python</span><br></pre></td></tr></table></figure>
+
+<p>2.执行完成之后验证是否成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python3</span><br></pre></td></tr></table></figure>
+
+<p>3.出现 Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 26 2018, 23:26:24) ，就表示安装成功。</p>
+<p>4.查看python3安装位置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">which</span> python3</span><br></pre></td></tr></table></figure>
+
+<p>5.如果你希望终端python直接使用python3，则需配置环境变量</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>6.点击 i 开始编辑，将以下代码复制到最后，点击 esc 退出编辑，输入 ：wq! 强制保存退出文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> PATH=<span class="variable">$&#123;PATH&#125;</span>:/usr/<span class="built_in">local</span>/Cellar/python/3.7.3/bin</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">alias</span> python=<span class="string">&quot;/usr/local/Cellar/python/3.7.3/bin/python3&quot;</span></span><br><span class="line"></span><br><span class="line">$ <span class="built_in">alias</span> pip=<span class="string">&quot;/usr/local/Cellar/python/3.7.3/bin/pip3&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>7.想立即生效运行 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span> /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>到此为止python安装✅。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/03/19/Python%E5%AE%89%E8%A3%85/" data-id="ckmg18tpa00000cjlazix3c6z" data-title="Python安装" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-使用Hexo搭建个人博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/19/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2021-03-19T01:17:56.000Z" itemprop="datePublished">2021-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/03/19/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用Hexo搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>首先开始准备工作！！！</p>
+<h2 id="Node-js-安装"><a href="#Node-js-安装" class="headerlink" title="Node.js 安装"></a>Node.js 安装</h2><p>1.下载地址,一路下一步</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ https://nodejs.org/en/</span><br></pre></td></tr></table></figure>
+
+<p>2.安装完成之后验证</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="Git-安装"><a href="#Git-安装" class="headerlink" title="Git 安装"></a>Git 安装</h2><p>1.下载地址,一路下一步</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install git</span><br></pre></td></tr></table></figure>
+
+<p>2.安装完成之后验证</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br></pre></td></tr></table></figure>
+
+<p>3.创建一个全局用户名、全局邮箱作为配置信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;your_name&quot;</span>  </span><br><span class="line">$ git config --global user.email <span class="string">&quot;your_email@youremail.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>4.配置信息可以更改，以后想要更改使用上面指令就可以。同时可以使用git config –list指令查看Git的配置信息。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br></pre></td></tr></table></figure>
+
+<p>5.建议设置大小写敏感</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config core.ignorecase <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>6.生成密钥</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;your_email@youremail.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>生成密钥后，在本地的/Users/当前电脑用户/.ssh目录下会生成两个文件id_rsa、id_rsa.pub，id_rsa文件保存的是私钥，保存于本地，id_rsa.pub文件保存的是公钥，需要将里面内容上传到远端仓库</p>
+<p>7.打开你的github账号，在Settings中的左侧边导航中找到SSH and GPG keys，点击左面面板右上方的New SSH key添加密匙，填写完毕后点击Add SSH key按钮，就OK了！！</p>
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>1.输入命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>2.验证 Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>3.本地创建一个空文件夹，进入文件夹输入以下命令，初始化 blog</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+
+<p>输入命令之后可能会报错，参考以下设置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ https://spoience.com/articles/git-npm-proxy.html</span><br></pre></td></tr></table></figure>
+
+<p>4.本地启动 blog，主要是本地预览文章用 （按下 ctrl+c 即可停止）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<p>5.在创建好的 hexo 文件中添加上传图片到 Github 的插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p> 同时修改 hexo 目录下 _config.yml 文件配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ post_asset_folder:<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>6.输入命令新建 blog</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">&quot;使用hexo搭建个人博客&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ &gt;&gt;可以发现该<span class="built_in">source</span>目录下被新建了一个 文件及文件夹</span><br><span class="line">$ 使用hexo搭建个人博客.md</span><br><span class="line">$ 使用hexo搭建个人博客</span><br><span class="line">$ &gt;&gt;在该文件中存放图片, 并在 md文件中引用即可</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;img src=<span class="string">&quot;使用hexo搭建个人博客/xunlei.png&quot;</span> style=<span class="string">&quot;zoom:50%;&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="部署到-Github"><a href="#部署到-Github" class="headerlink" title="部署到 Github"></a>部署到 Github</h2><p>1.在目录下安装 hexo-deployer-git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>2.创建 Github 主页</p>
+ <img src="/2021/03/19/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/zc.png" style="zoom:50%;">
+
+
+<p>3.编辑 hexo 目录下的_config.yml 文件，文件末尾添加以下内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ deploy:</span><br><span class="line">$ <span class="built_in">type</span>: git</span><br><span class="line">$ repo: https://github.com/abc/abc.github.io.git</span><br><span class="line">$ branch: master</span><br></pre></td></tr></table></figure>
+
+<p>4.将本地 blog 推送到 Github</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>5.成功之后，浏览器输入域名即可访问</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ https://注册账号.github.io</span><br></pre></td></tr></table></figure>
+
+<p>6.切换主题，使用命令下载到本地，编辑 hexo 目录下的_config.yml 文件，将 theme 后面的值修改成主题名称</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/tommy351/hexo-theme-主题名称.git themes/主题名称</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/03/19/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckmg18tpi00020cjl6j0jchot" data-title="使用Hexo搭建个人博客" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/19/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-03-19T00:53:52.834Z" itemprop="datePublished">2021-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/03/19/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/03/19/hello-world/" data-id="ckmg18tpg00010cjl7kj076wx" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a target="_blank" rel="noopener" href="https://github.com/tommy351" class="mobile-nav-link">GitHub</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
