@@ -2616,6 +2616,7 @@ blockquote footer cite:before {
 #aside-content .card-info .author-info__description {
   margin-top: -0.3rem;
   font-size: 1em;
+  font-color: #00f;
 }
 #aside-content .card-info .card-info-data {
   display: table;
@@ -4565,7 +4566,7 @@ _:future,
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99;
   pointer-events: none;
 }
 .medium-zoom-image--opened {
